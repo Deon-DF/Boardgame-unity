@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 69c1cf8460d74284c9d03bbbfe3dfe21
+timeCreated: 1527799586
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Korolev
+  fontNames:
+  - Korolev
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 20f756e073110984aa4eb9c5748f6bdc, type: 3}
+  - {fileID: 12800000, guid: 4b4476a6ababcad4388df376ed74faaf, type: 3}
+  - {fileID: 12800000, guid: 61a4c3fc105a6bb4abd592606bf011d1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

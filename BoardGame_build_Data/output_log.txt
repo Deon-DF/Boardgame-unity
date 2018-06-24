@@ -1,0 +1,429 @@
+Initialize engine version: 5.6.5f1 (2cac56bf7bb6)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   21.20.16.4550
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.030 seconds
+Platform assembly: C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\dchuraev\Documents\GitHub\BoardGame\BoardGame_build_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 59Hz; virtual: 3840x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 4.466775 ms
+====================================================================================================================
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ Starting new instance of the game Board game
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ Device: Desktop, Model: 20HN0016RI (LENOVO), Hostname: BUH1126
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+====================================================================================================================
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> Main gameObject is initialized.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> Verification system is started.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> The upgrade is now named: No government
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> UPGRADE: The level of No government is now 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> The upgrade is now named: No walls
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> UPGRADE: The level of No walls is now 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Assassin to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Assassin to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Druid to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Druid to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Scout to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Scout to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Scout to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Scout to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Archer to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Archer to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Archer to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raider to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raider to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raider to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Warlock to deck: Opponent Draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Elder to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raid to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raid to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raid to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raid to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Raid to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Militia to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Militia to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Militia to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Militia to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> ADDCARD: Militia to deck: Player draw pile.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:42 PM] Info> SHUFFLE: Opponent Draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> SHUFFLE: Player draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> REFRESHSTATS: Resetting energy to 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> REFRESHSTATS: Resetting fortification to 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> OPPONENTDRAWCARD: Opponent draws Warlock.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> MOVECARD: Add Warlock to Opponent Hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> MOVECARD: Spawn Warlock as GameObject for opponent.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> ONDEAL: The card Warlock is dealt in the hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> MOVECARD: Remove Warlock from Opponent Draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> OPPONENTDRAWCARD: Opponent draws Scout.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> MOVECARD: Add Scout to Opponent Hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> MOVECARD: Spawn Scout as GameObject for opponent.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> ONDEAL: The card Scout is dealt in the hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> MOVECARD: Remove Scout from Opponent Draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> DRAWCARD: Raid into Player hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:43 PM] Info> MOVECARD: Add Raid to Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Spawn Raid as GameObject for player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Remove Raid from Player draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> ONDEAL: The card Raid is dealt in the hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> DRAWCARD: Raid into Player hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Add Raid to Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Spawn Raid as GameObject for player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Remove Raid from Player draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> ONDEAL: The card Raid is dealt in the hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> DRAWCARD: Militia into Player hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Add Militia to Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Spawn Militia as GameObject for player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Remove Militia from Player draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> ONDEAL: The card Militia is dealt in the hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> DRAWCARD: Raid into Player hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Add Raid to Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Spawn Raid as GameObject for player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Remove Raid from Player draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> ONDEAL: The card Raid is dealt in the hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> DRAWCARD: Raid into Player hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Add Raid to Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Spawn Raid as GameObject for player.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> MOVECARD: Remove Raid from Player draw pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:44 PM] Info> ONDEAL: The card Raid is dealt in the hand.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:47 PM] Info> The upgrade is now named: Earth rampart
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:47 PM] Info> UPGRADE: The level of Earth rampart is now 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:49 PM] Info> The upgrade is now named: Palisade
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:49 PM] Info> UPGRADE: The level of Palisade is now 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2940 -> priority: 1 
+  Thread -> id: 3a54 -> priority: 1 
+[6/22/2018 2:14:58 PM] Info> ONDISCARD: The card Raid is discarded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Adding Raid to Player discard pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Removing Raid from Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> ONDISCARD: The card Raid is discarded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Adding Raid to Player discard pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Removing Raid from Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> ONDISCARD: The card Militia is discarded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Adding Militia to Player discard pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Removing Militia from Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> ONDISCARD: The card Raid is discarded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Adding Raid to Player discard pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Removing Raid from Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> ONDISCARD: The card Raid is discarded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Adding Raid to Player discard pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Removing Raid from Player hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> ONDISCARD: The card Scout is discarded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Adding Scout to Opponent Discard pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Removing Scout from Opponent Hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> ONDISCARD: The card Warlock is discarded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Adding Warlock to Opponent Discard pile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[6/22/2018 2:14:58 PM] Info> OnDisable: Removing Warlock from Opponent Hand
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
