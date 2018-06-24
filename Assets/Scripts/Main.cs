@@ -154,6 +154,7 @@ public class Main : MonoBehaviour {
 
 		// TODO GENERATE REWARD AND A CHOICE OF NEW PROGRESSION
 		verificator.DebugEnemyDeck ();
+		Main.instance.oDrawDeck.Shuffle();
 
 		StartTurn ();
 	}
