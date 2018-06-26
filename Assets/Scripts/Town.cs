@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-public class Town {
+public class TownHouse {
 
 	public string name = "upgrade_placeholder";
 	int _level = 0;
 	public int maxlevel = 1;
 
-	public enum Upgrade { none, government, walls }
-	public Upgrade type = Town.Upgrade.none;
+	public enum Upgrade { none, government, hunter, smithy, tavern, trader, walls, warehouse }
+	public Upgrade type = TownHouse.Upgrade.none;
 
 	public int level {
 		get {
@@ -33,7 +33,8 @@ public class Town {
 	}
 
 
-	public void SetName () {
+	public void SetName ()
+	{
 		switch (type) {
 
 		case Upgrade.government:
@@ -53,7 +54,72 @@ public class Town {
 			}
 			break;
 
-		case (Upgrade.walls):
+		case Upgrade.hunter:
+			switch (level) {
+			case 0:
+				name = "No hunter";
+				break;
+			case 1:
+				name = "Hunter's hut";
+				break;
+			case 2:
+				name = "Hunting lodge";
+				break;
+			default:
+				Main.instance.logger.LogError ("SETNAME: Cannot set the name of Upgrade " + this.name + " to a proper level; the level is out of defined range!");
+				break;
+			}
+			break;
+
+		case Upgrade.smithy:
+			switch (level) {
+			case 0:
+				name = "No blacksmith";
+				break;
+			case 1:
+				name = "Blacksmith";
+				break;
+			case 2:
+				name = "Armory";
+				break;
+			default:
+				Main.instance.logger.LogError ("SETNAME: Cannot set the name of Upgrade " + this.name + " to a proper level; the level is out of defined range!");
+				break;
+			}
+			break;
+
+		case Upgrade.tavern:
+			switch (level) {
+			case 0:
+				name = "No tavern";
+				break;
+			case 1:
+				name = "Bar";
+				break;
+			case 2:
+				name = "Tavern";
+				break;
+			default:
+				Main.instance.logger.LogError ("SETNAME: Cannot set the name of Upgrade " + this.name + " to a proper level; the level is out of defined range!");
+				break;
+			}
+			break;
+
+		case Upgrade.trader:
+			switch (level) {
+			case 0:
+				name = "No trader";
+				break;
+			case 1:
+				name = "Trading post";
+				break;
+			default:
+				Main.instance.logger.LogError ("SETNAME: Cannot set the name of Upgrade " + this.name + " to a proper level; the level is out of defined range!");
+				break;
+			}
+			break;
+
+		case Upgrade.walls:
 			switch (level) {
 			case 0:
 				name = "No walls";
@@ -74,6 +140,20 @@ public class Town {
 			}
 			break;
 
+		case Upgrade.warehouse:
+			switch (level) {
+			case 0:
+				name = "No warehouse";
+				break;
+			case 1:
+				name = "Warehouse";
+				break;
+			default:
+				Main.instance.logger.LogError ("SETNAME: Cannot set the name of Upgrade " + this.name + " to a proper level; the level is out of defined range!");
+				break;
+			}
+			break;
+
 		default:
 			Main.instance.logger.LogError ("SETNAME: Cannot set name of " + this.name + " to a proper level; the type is not defined.");
 			break;
@@ -87,22 +167,57 @@ public class Town {
 
 public class Settlement {
 
-	public Town government;
-	public Town walls;
+	public TownHouse government;
+	public TownHouse hunter;
+	public TownHouse smithy;
+	public TownHouse tavern;
+	public TownHouse trader;
+	public TownHouse walls;
+	public TownHouse warehouse;
 
 	public Settlement() {
-		government = new Town ();
-		government.type = Town.Upgrade.government;
+		government = new TownHouse ();
+		government.type = TownHouse.Upgrade.government;
 		government.name = "Government";
 		government.level = 0;
-		government.maxlevel = 2;
+		government.maxlevel = 3;
 
+		hunter = new TownHouse ();
+		hunter.type = TownHouse.Upgrade.government;
+		hunter.name = "Hunter";
+		hunter.level = 0;
+		hunter.maxlevel = 2;
 
-		walls = new Town ();
-		walls.type = Town.Upgrade.walls;
+		smithy = new TownHouse ();
+		smithy.type = TownHouse.Upgrade.smithy;
+		smithy.name = "Smithy";
+		smithy.level = 0;
+		smithy.maxlevel = 2;
+
+		tavern = new TownHouse ();
+		tavern.type = TownHouse.Upgrade.tavern;
+		tavern.name = "Tavern";
+		tavern.level = 0;
+		tavern.maxlevel = 2;
+
+		trader = new TownHouse ();
+		trader.type = TownHouse.Upgrade.smithy;
+		trader.name = "Trader";
+		trader.level = 0;
+		trader.maxlevel = 1;
+
+		walls = new TownHouse ();
+		walls.type = TownHouse.Upgrade.walls;
 		walls.name = "Walls";
 		walls.level = 0;
 		walls.maxlevel = 3;
+
+		warehouse = new TownHouse ();
+		warehouse.type = TownHouse.Upgrade.smithy;
+		warehouse.name = "Warehouse";
+		warehouse.level = 0;
+		warehouse.maxlevel = 1;
+
 
 	}
 }

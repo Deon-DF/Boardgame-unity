@@ -10,7 +10,7 @@ public class Card {
 							// wildlife
 							animal_boar,  animal_wolf, animal_wolf_pack,
 							// demons
-							demon_fireelemental,
+							demon_fire,
 							// agents
 							animal_crows, goblin_assassin
 	}
@@ -165,7 +165,7 @@ public class Card {
 			break;
 		
 		// demons
-		case PlayCard.demon_fireelemental:
+		case PlayCard.demon_fire:
 			AttackPlayer(playcardValue);
 			break;
 
@@ -226,7 +226,7 @@ public class Card {
 			playcardName = "Elder";
 			playCard = PlayCard.elder;
 			playcardArt = "village_elder";
-			playcardClass = "Agent";
+			playcardClass = "Village";
 			playcardCost = 0;
 			playcardValue = 1;
 			playcardShortDescription = "+" + playcardValue + " action(s).";
@@ -238,7 +238,7 @@ public class Card {
 			playcardName = "Raid";
 			playCard = PlayCard.raid;
 			playcardArt = "village_raid";
-			playcardClass = "Attack";
+			playcardClass = "Village";
 			playcardCost = 1;
 			playcardValue = 1;
 			playcardShortDescription = "Deals " + playcardValue + " damage.";
@@ -250,7 +250,7 @@ public class Card {
 			playcardName = "Militia";
 			playCard = PlayCard.militia;
 			playcardArt = "village_militia";
-			playcardClass = "Defense";
+			playcardClass = "Village";
 			playcardCost = 1;
 			playcardValue = 1;
 			playcardShortDescription = "+" + playcardValue + " to fortifications.";
@@ -266,7 +266,7 @@ public class Card {
 			playcardName = "Boar";
 			playCard = PlayCard.animal_boar;
 			playcardArt = "animal_boar";
-			playcardClass = "Animal";
+			playcardClass = "Beast";
 			playcardValue = 1;
 			playcardCost = 2;
 			playcardEffect = Effect.physical_attack;
@@ -279,7 +279,7 @@ public class Card {
 			playcardName = "Crows";
 			playCard = PlayCard.animal_crows;
 			playcardArt = "animal_crows";
-			playcardClass = "Agent";
+			playcardClass = "Beast";
 			trooper = false;
 			playcardValue = 1;
 			playcardCost = 1;
@@ -293,7 +293,7 @@ public class Card {
 			playcardName = "Wolf";
 			playCard = PlayCard.animal_wolf;
 			playcardArt = "animal_wolf";
-			playcardClass = "Animal";
+			playcardClass = "Beast";
 			playcardValue = 1;
 			playcardCost = 1;
 			playcardEffect = Effect.physical_attack;
@@ -306,7 +306,7 @@ public class Card {
 			playcardName = "Wolf pack";
 			playCard = PlayCard.animal_wolf_pack;
 			playcardArt = "animal_wolf_pack";
-			playcardClass = "Animal";
+			playcardClass = "Beast";
 			playcardValue = 2;
 			playcardCost = 2;
 			playcardEffect = Effect.physical_attack;
@@ -382,12 +382,12 @@ public class Card {
 			playcardValue = 1;
 			playcardCost = 2;
 			playcardEffect = Effect.summon;
-			playcardSummon = PlayCard.demon_fireelemental;
-			playcardShortDescription = "Summon fire elemental: " + playcardValue;
+			playcardSummon = PlayCard.demon_fire;
+			playcardShortDescription = "Summon fire demon: " + playcardValue;
 			if (playcardValue < 2) {
-				playcardDescription = "Summons " + playcardValue + " fire elemental";
+				playcardDescription = "Summons " + playcardValue + " fire demon";
 			} else {
-				playcardDescription = "Summons " + playcardValue + " fire elemental";
+				playcardDescription = "Summons " + playcardValue + " fire demons";
 			}
 			deathsound = AudioPlayer.instance.goblin_groan;
 			break;
@@ -397,7 +397,7 @@ public class Card {
 				playcardName = "Assassin";
 				playCard = PlayCard.goblin_assassin;
 				playcardArt = "goblin_assassin";
-				playcardClass = "Agent";
+				playcardClass = "Goblin";
 				trooper = false;
 				playcardValue = 1;
 				playcardCost = 1;
@@ -410,10 +410,10 @@ public class Card {
 		// DEMONS
 		// creatures
 
-		case PlayCard.demon_fireelemental:
-			playcardName = "Fire elemental";
-			playCard = PlayCard.demon_fireelemental;
-			playcardArt = "demon_fireelemental";
+		case PlayCard.demon_fire:
+			playcardName = "Fire demon";
+			playCard = PlayCard.demon_fire;
+			playcardArt = "demon_fire";
 			playcardClass = "Demon";
 			playcardValue = 3;
 			playcardCost = 5;

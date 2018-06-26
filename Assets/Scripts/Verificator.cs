@@ -126,7 +126,13 @@ public class Verificator {
 
 	public void DebugIncreaseWalls() {
 		if (Input.GetKeyDown (KeyCode.W)) {
+			Main.instance.town.government.level += 1;
+			Main.instance.town.hunter.level += 1;
+			Main.instance.town.smithy.level += 1;
+			Main.instance.town.tavern.level += 1;
+			Main.instance.town.trader.level += 1;
 			Main.instance.town.walls.level += 1;
+			Main.instance.town.warehouse.level += 1;
 		}
 	}
 }

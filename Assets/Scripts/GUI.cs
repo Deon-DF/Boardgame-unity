@@ -7,15 +7,11 @@ public class GUI : MonoBehaviour {
 
 	public static GUI instance;
 
-	public GameObject backdrop;
-	public GameObject seasonIcon;
-
-
-	public GameObject walls;
-	public GameObject walls_background;
-
 	public GameObject enemyBase;
 	public GameObject enemyBaseName;
+
+	public GameObject backdrop;
+	public GameObject seasonIcon;
 
 	public Canvas CardDisplayCanvas;
 	public CardDisplay CardDisplay;
@@ -80,24 +76,112 @@ public class GUI : MonoBehaviour {
 	#endregion
 
 	#region TownGraphics
-	public void RedrawTown() {
+	public void RedrawTown ()
+	{
+
+		switch (Main.instance.town.government.level) {
+		case 0:
+			Structures.instance.government.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
+			break;
+		case 1:
+			Structures.instance.government.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/government_1");
+			break;
+		case 2:
+			Structures.instance.government.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/government_2");
+			break;
+		case 3:
+			Structures.instance.government.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/government_3");
+			break;
+
+		default:
+			break;
+		}
+
+		switch (Main.instance.town.hunter.level) {
+		case 0:
+			Structures.instance.hunter.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
+			break;
+		case 1:
+			Structures.instance.hunter.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/hunter_1");
+			break;
+		case 2:
+			Structures.instance.hunter.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/hunter_2");
+			break;
+
+		default:
+			break;
+		}
+
+		switch (Main.instance.town.smithy.level) {
+		case 0:
+			Structures.instance.smithy.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
+			break;
+		case 1:
+			Structures.instance.smithy.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/smithy_1");
+			break;
+		case 2:
+			Structures.instance.smithy.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/smithy_2");
+			break;
+
+		default:
+			break;
+		}
+
+		switch (Main.instance.town.tavern.level) {
+		case 0:
+			Structures.instance.tavern.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
+			break;
+		case 1:
+			Structures.instance.tavern.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/tavern_1");
+			break;
+		case 2:
+			Structures.instance.tavern.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/tavern_2");
+			break;
+
+		default:
+			break;
+		}
+
+		switch (Main.instance.town.trader.level) {
+		case 0:
+			Structures.instance.trader.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
+			break;
+		case 1:
+			Structures.instance.trader.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/trader_1");
+			break;
+
+		default:
+			break;
+		}
 
 		switch (Main.instance.town.walls.level) {
 		case 0:
-			walls_background.SetActive (false);
-			walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
+			Structures.instance.walls_background.SetActive (false);
+			Structures.instance.walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
 			break;
 		case 1:
-			walls_background.SetActive (true);
-			walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/wall_1");
+			Structures.instance.walls_background.SetActive (true);
+			Structures.instance.walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/wall_1");
 			break;
 		case 2:
-			walls_background.SetActive (true);
-			walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/wall_2");
+			Structures.instance.walls_background.SetActive (true);
+			Structures.instance.walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/wall_2");
 			break;
 		case 3:
-			walls_background.SetActive (true);
-			walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/wall_3");
+			Structures.instance.walls_background.SetActive (true);
+			Structures.instance.walls.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/wall_3");
+			break;
+
+		default:
+			break;
+		}
+
+		switch (Main.instance.town.warehouse.level) {
+		case 0:
+			Structures.instance.warehouse.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/empty");
+			break;
+		case 1:
+			Structures.instance.warehouse.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/town/warehouse");
 			break;
 
 		default:
@@ -119,8 +203,8 @@ public class GUI : MonoBehaviour {
 		Cursor.SetCursor (Resources.Load<Texture2D> ("graphics/ui/cursor"), Vector2.zero, CursorMode.Auto);
 
 
-		enemyBase.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/enemybase/nothing");
-		enemyBaseName.GetComponent<Text> ().text = "";
+		GUI.instance.enemyBase.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/enemybase/nothing");
+		GUI.instance.enemyBaseName.GetComponent<Text> ().text = "";
 		
 	}
 

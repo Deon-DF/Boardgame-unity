@@ -1,8 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Town.cs">
     <Files>
-      <File FileName="Assets\Scripts\Main.cs" Line="151" Column="17" />
+      <File FileName="Assets\Scripts\Card.cs" Line="258" Column="10" />
+      <File FileName="Assets\Scripts\Main.cs" Line="118" Column="6" />
+      <File FileName="Assets\Scripts\Structures.cs" Line="16" Column="29" />
+      <File FileName="Assets\Scripts\Verificator.cs" Line="131" Column="41" />
+      <File FileName="Assets\Scripts\Town.cs" Line="183" Column="26" />
+      <File FileName="Assets\Scripts\GUI.cs" Line="93" Column="124" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
