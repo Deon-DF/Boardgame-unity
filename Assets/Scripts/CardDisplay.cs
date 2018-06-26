@@ -10,6 +10,7 @@ public class CardDisplay : MonoBehaviour, IPointerClickHandler {
 	public GameObject cardArtwork;
 	public GameObject cardType;
 	public GameObject cardDescription;
+	public GameObject cardCost;
 
 	public void OnPointerClick(PointerEventData eventData) {
 		this.transform.root.gameObject.SetActive (false);

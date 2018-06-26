@@ -27,6 +27,7 @@ public class BoardGameObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
 	public GameObject goFrame;
 	public GameObject goCardClass;
 	public GameObject goDescription;
+	public GameObject goStats;
 
 	#endregion
 
@@ -166,6 +167,21 @@ public class BoardGameObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
 			goCardClass.GetComponent<Text> ().text = assignedCard.playcardClass;
 			goDescription.GetComponent<Text> ().text = assignedCard.playcardShortDescription;
 			goArtwork.GetComponent<Image> ().sprite = Resources.Load<Sprite> (Info.cards_path + assignedCard.playcardArt);
+
+			if (this.assignedCard.playcardEffect == Card.Effect.physical_attack && this.assignedCard.playcardValue > 0) {
+				this.goStats.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("graphics/ui/icons/sword" + this.assignedCard.playcardValue.ToString());
+			}
+
+			if (this.assignedCard.playcardEffect == Card.Effect.physical_defense && this.assignedCard.playcardValue > 0) {
+				this.goStats.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("graphics/ui/icons/shield" + this.assignedCard.playcardValue.ToString());
+			}
+
+			if (this.assignedCard.playcardEffect == Card.Effect.action) {
+				this.goStats.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("graphics/ui/icons/action");
+			}
+			if (this.assignedCard.playcardEffect == Card.Effect.summon) {
+				this.goStats.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("graphics/ui/icons/summon");
+			}
 		}
 	}
 
@@ -184,7 +200,11 @@ public class BoardGameObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
 			GUI.instance.CardDisplay.cardName.GetComponent<Text>().text = this.assignedCard.playcardName;
 			GUI.instance.CardDisplay.cardType.GetComponent<Text> ().text = this.assignedCard.playcardClass;
 			GUI.instance.CardDisplay.cardArtwork.GetComponent<Image> ().sprite = Resources.Load<Sprite> (Info.cards_path + this.assignedCard.playcardArt);
-			GUI.instance.CardDisplay.cardDescription.GetComponent<Text> ().text = this.assignedCard.playcardDescription;
+			if (this.assignedCard.trooper) {
+				GUI.instance.CardDisplay.cardCost.GetComponent<Text> ().text = this.assignedCard.playcardCost.ToString();
+			} else {
+				GUI.instance.CardDisplay.cardCost.GetComponent<Text> ().text = "";
+			}
 		}
 	}
 

@@ -15,7 +15,7 @@ public class Card {
 							animal_crows, goblin_assassin
 	}
 
-	public enum Effect { none, physical_attack, magic_attack, summon }
+	public enum Effect { none, physical_attack, magic_attack, summon, physical_defense, magic_defense, action }
 
 	public PlayCard playCard = PlayCard.none;
 	public Effect playcardEffect = Effect.none;
@@ -34,7 +34,6 @@ public class Card {
 	public bool player_owned = false;
 	public bool trooper = true;
 
-	int index = 0;
 
 	#region Functions to describe attacking the opponent
 
@@ -120,7 +119,6 @@ public class Card {
 			switch (playCard) {
 			case PlayCard.raid:
 				AudioPlayer.instance.soundplayer.PlayOneShot (AudioPlayer.instance.sword_slash);
-				index = 0;
 				DamageDeck(DamageOpponent(this.playcardValue));
 				break;
 			case PlayCard.militia:
@@ -229,6 +227,7 @@ public class Card {
 			playcardClass = "Village";
 			playcardCost = 0;
 			playcardValue = 1;
+			playcardEffect = Effect.action;
 			playcardShortDescription = "+" + playcardValue + " action(s).";
 			playcardDescription = "Gives " + playcardValue + " extra action(s) this turn.";
 			break;
@@ -241,6 +240,7 @@ public class Card {
 			playcardClass = "Village";
 			playcardCost = 1;
 			playcardValue = 1;
+			playcardEffect = Effect.physical_attack;
 			playcardShortDescription = "Deals " + playcardValue + " damage.";
 			playcardDescription = "Deals " + playcardValue + " damage to the closest enemy. If no enemies left, burn the opponent draw deck.";
 			break;
@@ -253,6 +253,7 @@ public class Card {
 			playcardClass = "Village";
 			playcardCost = 1;
 			playcardValue = 1;
+			playcardEffect = Effect.physical_defense;
 			playcardShortDescription = "+" + playcardValue + " to fortifications.";
 			playcardDescription = "Adds " + playcardValue+ " to fortifications.";
 			break;

@@ -36,6 +36,9 @@ public class GUI : MonoBehaviour {
 	public GameObject FortificationAmount;
 	public GameObject EnergyAmount;
 
+	public GameObject AttackIcon;
+	public GameObject ShieldIcon;
+
 	public GameObject BoardControlDisabler;
 	public GameObject ProgressionCanvas;
 	public GameObject ProgressionPanel;
@@ -76,6 +79,15 @@ public class GUI : MonoBehaviour {
 	}
 
 	#endregion
+
+	#region spawn icon
+
+	public void SpawnIcon (GameObject _icon, GameObject _parent) {
+		GameObject newIcon = Instantiate (_icon);
+		newIcon.transform.SetParent (_parent.transform);		
+	}
+
+	#endregion spawn icon
 
 	#region TownGraphics
 	public void RedrawTown ()

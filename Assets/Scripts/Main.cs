@@ -66,6 +66,14 @@ public class Main : MonoBehaviour {
 
 	#endregion
 
+	#region engine
+
+	public void ExitGame() {
+		Application.Quit();
+	}
+
+	#endregion
+
 	#region Seasons
 
 	public enum Season { dawn, ember, dusk, frost }
@@ -212,7 +220,7 @@ public class Main : MonoBehaviour {
 
 	#endregion
 
-	#region Spawn card graphic
+	#region Spawn card/icon  graphic
 
 	public void SpawnCard (Card _card, GameObject pile) {
 		GameObject cardObject = Instantiate (card_entity);
