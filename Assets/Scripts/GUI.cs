@@ -43,6 +43,7 @@ public class GUI : MonoBehaviour {
 	#region Display text UI
 
 	public void DisplayUIText(string _text, float _time) {
+		Main.instance.logger.LogError("GUI::DISPLAYUITEXT: DISABLING PLAYER CONTROL!");
 		Main.instance.boardPlayerControl = false;
 		TextDisplay.text = _text;
 		textDisplayTime = _time;
@@ -54,6 +55,7 @@ public class GUI : MonoBehaviour {
 		yield return new WaitForSeconds (textDisplayTime);
 		GUI.instance.TextDisplayCanvas.gameObject.SetActive (false);
 		GUI.instance.TextDisplay.text = "";
+		Main.instance.logger.LogError("GUI::DISPLAYUITEXTIENUMERATOR: ENABLING PLAYER CONTROL!");
 		Main.instance.boardPlayerControl = true;
 	}
 

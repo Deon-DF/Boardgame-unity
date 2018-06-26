@@ -156,10 +156,13 @@ public class BoardGameObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
 
 	#endregion
 
-	public void RefreshCard() {	// Setting gameobject visualization based on the assigned play card
+	public void RefreshCard ()
+	{	// Setting gameobject visualization based on the assigned play card
 		if (assignedCard != null) {
 			goName.GetComponent<Text> ().text = assignedCard.playcardName;
-			goCost.GetComponent<Text> ().text = assignedCard.playcardCost.ToString ();
+			if (assignedCard.trooper) {
+				goCost.GetComponent<Text> ().text = assignedCard.playcardCost.ToString ();
+			} else {goCost.GetComponent<Text> ().text = "";}
 			goCardClass.GetComponent<Text> ().text = assignedCard.playcardClass;
 			goDescription.GetComponent<Text> ().text = assignedCard.playcardShortDescription;
 			goArtwork.GetComponent<Image> ().sprite = Resources.Load<Sprite> (Info.cards_path + assignedCard.playcardArt);
@@ -186,11 +189,13 @@ public class BoardGameObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
 	}
 
 	public IEnumerator Die() {
+		Main.instance.logger.LogUI("BOARDGAMEOBJECT::DIE: DISABLING PLAYER CONTROL!");
 		Main.instance.boardPlayerControl = false;
 		yield return new WaitForSeconds (0.5f);
 		this.assignedCard.OnDeath ();
 		AudioPlayer.instance.soundplayer.PlayOneShot (this.assignedCard.deathsound);
 		Destroy (this.gameObject);
+		Main.instance.logger.LogUI("BOARDGAMEOBJECT::DIE ENABLING PLAYER CONTROL!");
 		Main.instance.boardPlayerControl = true;
 	}
 

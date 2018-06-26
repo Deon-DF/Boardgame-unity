@@ -90,22 +90,22 @@ public class Main : MonoBehaviour {
 			_season = value;
 			switch (value) {
 			case Season.dawn:
-				GUI.instance.seasonText.text = "Dawn Season";
+				GUI.instance.seasonText.text = "Dawn";
 				GUI.instance.backdrop.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/backdrops/dawn");
 				GUI.instance.seasonIcon.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/ui/season_dawn");
 				break;
 			case Season.ember:
-				GUI.instance.seasonText.text = "Ember Season";
+				GUI.instance.seasonText.text = "Ember";
 				GUI.instance.backdrop.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/backdrops/ember");
 				GUI.instance.seasonIcon.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/ui/season_ember");
 				break;
 			case Season.dusk:
-				GUI.instance.seasonText.text = "Dusk Season";
+				GUI.instance.seasonText.text = "Dusk";
 				GUI.instance.backdrop.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/backdrops/dusk");
 				GUI.instance.seasonIcon.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/ui/season_dusk");
 				break;
 			case Season.frost:
-				GUI.instance.seasonText.text = "Frost Season";
+				GUI.instance.seasonText.text = "Frost";
 				GUI.instance.backdrop.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/backdrops/frost");
 				GUI.instance.seasonIcon.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/ui/season_frost");
 				break;
@@ -114,6 +114,8 @@ public class Main : MonoBehaviour {
 	}
 
 	public void NextSeason() {
+		Main.instance.logger.LogUI("MAIN::NEXTSEASON: DISABLING PLAYER CONTROL!");
+		boardPlayerControl = false;
 		GUI.instance.enemyBase.GetComponent<Image> ().sprite = Resources.Load<Sprite> ("graphics/board/enemybase/nothing");
 		GUI.instance.enemyBaseName.GetComponent<Text> ().text = "";
 		int x = (int)season;
@@ -132,8 +134,12 @@ public class Main : MonoBehaviour {
 			AudioPlayer.instance.soundplayer.PlayOneShot (AudioPlayer.instance.crowd_scream);
 
 			GUI.instance.DisplayUIText("You have lost " + damageDealtLastTurn + " families.\n\n You survived the season. Next season: " + season, 5f);
+			Main.instance.logger.LogUI("MAIN::FINISHSEASON: DISABLING PLAYER CONTROL!");
+			boardPlayerControl = false;
 		} else {
 			GUI.instance.DisplayUIText("You survived the season. Next season: " + season, 5f);
+			Main.instance.logger.LogUI("MAIN::FINISHSEASON: DISABLING PLAYER CONTROL!");
+			boardPlayerControl = false;
 		}
 
 		if (oHandDeck.cards.Count > 0) {
@@ -368,11 +374,13 @@ public class Main : MonoBehaviour {
 	}
 
 	IEnumerator DealCardsWithDelay() {
+		Main.instance.logger.LogUI("MAIN::DEALCARDSWITHDELAY: DISABLING PLAYER CONTROL!");
 		boardPlayerControl = false;
 
 		if (SummonDeck.cards.Count > 0) {
 			int index = SummonDeck.cards.Count;
 			for (int i = 0; i < index; i++) {
+				yield return new WaitForSeconds (0.1f);
 				SummonDeck.OpponentDrawCard ();
 			}
 		}
@@ -391,6 +399,7 @@ public class Main : MonoBehaviour {
 			}
 		}
 
+		Main.instance.logger.LogUI("MAIN::DEALCARDSWITHDELAY: ENABLING PLAYER CONTROL!");
 		boardPlayerControl = true;
 	}
 
@@ -404,6 +413,8 @@ public class Main : MonoBehaviour {
 	}
 
 	void FinishTurn() {
+		Main.instance.logger.LogUI("MAIN::FINISHTURN: DISABLING PLAYER CONTROL!");
+		boardPlayerControl = false;
 		DiscardPlayerHand ();
 		ActivateMonsterCards ();
 		HandleLosses ();
