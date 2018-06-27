@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 12008, y: 14042}
   vertical: 1
-  controlID: 85
+  controlID: 10762
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 221}
   m_MaxSize: {x: 12008, y: 4021}
   vertical: 0
-  controlID: 71
+  controlID: 10707
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,10 +177,10 @@ MonoBehaviour:
     width: 298
     height: 521
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 9af4ffff00000000
+    scrollPos: {x: 0, y: 48}
+    m_SelectedIDs: 5e6cfdff
+    m_LastClickedID: -168866
+    m_ExpandedIDs: 546cfdff5e6cfdfff49afeff84b1ffffc2b8ffff78f4ffff9cf4ffff00000000882a0000622b0000a42b0000cc2b0000142c00002e2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -256,14 +256,14 @@ MonoBehaviour:
     width: 1171
     height: 521
   m_SceneLighting: 1
-  lastFramingTime: 1920.2569561704247
+  lastFramingTime: 9585.305838531362
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 570.9238, y: 424.78918, z: 0}
+    m_Target: {x: 449.40524, y: 431.05692, z: 0}
     speed: 2
-    m_Value: {x: 570.9238, y: 424.78918, z: 0}
+    m_Value: {x: 449.40524, y: 431.05692, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -290,9 +290,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 829.03064
+    m_Target: 821.1468
     speed: 2
-    m_Value: 829.03064
+    m_Value: 821.1468
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -455,18 +455,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Resources/prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Resources/prefabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Work\Github\Boardgame-unity
+  m_LastProjectPath: C:\Users\dchuraev\Documents\GitHub\BoardGame
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c0280000
-    m_LastClickedID: 10432
+    scrollPos: {x: 0, y: 4}
+    m_SelectedIDs: 50290000
+    m_LastClickedID: 10576
     m_ExpandedIDs: 00000000c02800003429000050290000ee290000042a0000182a00003c2a0000462a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -495,7 +495,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1a250000
     m_LastClickedID: 9498
-    m_ExpandedIDs: 00000000c02800003429000050290000ee290000042a0000182a00003c2a0000462a0000
+    m_ExpandedIDs: 00000000c02800003429000050290000ee290000042a0000182a00003c2a0000462a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,8 +520,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 5e6cfdff
+    m_LastClickedInstanceID: -168866
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000072660000f6330000883300000a340000b23200005c3200003a2b0000bc250000622a0000eac8fffffc2500005a7cffff182700009c57ffffec2500002c640000ea2c0000a89600003e1bcbff3a270000c6b200001a3a00001626000098250000d0bc0000f626000026260000ea2700007e2700004a280000be2800002a270000b61b0100d03500000c260000b026000010310000d42a00002c3e0000ce360000163e0000de24000024250000429701007a430100f024000018f8030008250000a82500002887f9ffb470f9ff00000000b6250000142500009627000040270000
     m_RenameOverlay:

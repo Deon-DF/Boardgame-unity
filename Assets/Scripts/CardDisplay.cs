@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 public class CardDisplay : MonoBehaviour, IPointerClickHandler {
 
 	public GameObject cardName;
-	public GameObject cardFrame;
 	public GameObject cardArtwork;
 	public GameObject cardType;
 	public GameObject cardDescription;

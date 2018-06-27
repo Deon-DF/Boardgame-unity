@@ -195,8 +195,7 @@ public class BoardGameObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
 				". Type: " + this.goCardClass.GetComponent<Text> ().text +
 				". Artwork: " + Info.cards_path + this.assignedCard.playcardArt +
 				". Description: '" + this.goDescription.GetComponent<Text> ().text + "'.");
-
-			GUI.instance.CardDisplay.cardFrame.GetComponent<Image> ().sprite = this.goFrame.GetComponent<Image> ().sprite;
+			
 			GUI.instance.CardDisplay.cardName.GetComponent<Text>().text = this.assignedCard.playcardName;
 			GUI.instance.CardDisplay.cardType.GetComponent<Text> ().text = this.assignedCard.playcardClass;
 			GUI.instance.CardDisplay.cardArtwork.GetComponent<Image> ().sprite = Resources.Load<Sprite> (Info.cards_path + this.assignedCard.playcardArt);

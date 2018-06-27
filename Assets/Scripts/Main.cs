@@ -166,7 +166,22 @@ public class Main : MonoBehaviour {
 
 		yield return new WaitForSeconds (5f);
 
-		// TODO GENERATE REWARD AND A CHOICE OF NEW PROGRESSION
+		// Generate reward cards
+		//rewardcard1 = ..;
+		//rewardcard2 = ..;
+		//rewardcard3 = ..;
+
+		// Assign reward UI
+
+		// Display reward UI
+		GUI.instance.BonusCanvas.gameObject.SetActive(true);
+
+		while (GUI.instance.BonusCanvas.gameObject.activeInHierarchy) {
+		
+			yield return new WaitForSeconds (0.5f);
+		}
+		//GUI.instance.BonusCanvas.gameObject.SetActive(false);
+
 		verificator.DebugEnemyDeck ();
 		Main.instance.oDrawDeck.Shuffle();
 
@@ -199,24 +214,12 @@ public class Main : MonoBehaviour {
 
 	#region Inspector-attached gameobjects
 
-	/*
-	//	- Player draw pile
-	public GameObject pDrawPile;
-	//	- Player discard pile
-	public GameObject pDiscardPile;
-	//	- Player hand location
-	public GameObject pHandPile;
-	//	- Opponent draw pile
-	public GameObject oDrawPile;
-	//	- Opponent discard pile
-	public GameObject oDiscardPile;
-	//	- Opponent hand location
-	public GameObject oHandPile;
-	*/
-
-
 	public GameObject card_entity;
 	public GameObject card_opponent_entity;
+
+	public BonusCard rewardcard1;
+	public BonusCard rewardcard2;
+	public BonusCard rewardcard3;
 
 	#endregion
 

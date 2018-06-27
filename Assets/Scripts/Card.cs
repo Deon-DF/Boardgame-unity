@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Card {
-	
+
+	#region PlayCard types
 	public enum PlayCard { none, raid, militia, elder,
 							// goblins
 							goblin_scout, goblin_archer, goblin_raider, goblin_druid, goblin_warlock,
@@ -14,9 +15,11 @@ public class Card {
 							// agents
 							animal_crows, goblin_assassin
 	}
-
+	#endregion
+	#region Effects
 	public enum Effect { none, physical_attack, magic_attack, summon, physical_defense, magic_defense, action }
-
+	#endregion
+	#region Stats
 	public PlayCard playCard = PlayCard.none;
 	public Effect playcardEffect = Effect.none;
 	public PlayCard playcardSummon = PlayCard.none;
@@ -33,7 +36,7 @@ public class Card {
 	public bool permanent = false;
 	public bool player_owned = false;
 	public bool trooper = true;
-
+	#endregion
 
 	#region Functions to describe attacking the opponent
 
@@ -102,6 +105,8 @@ public class Card {
 
 	#endregion Functions to describe attacking the opponent
 
+	#region Deal/Play/Discard/Death effects
+
 	public void OnDeal () {
 		Main.instance.logger.LogInfo ("ONDEAL: The card " + playcardName + " is dealt in the hand.");
 
@@ -114,7 +119,7 @@ public class Card {
 	public void Play() {
 		Main.instance.logger.LogInfo ("Play effect is being resolved. Card played: " + playCard);
 
-		#region Player cards play effects
+		// Player cards play effects
 		if (player_owned) {
 			switch (playCard) {
 			case PlayCard.raid:
@@ -134,10 +139,8 @@ public class Card {
 				break;
 			}
 		}
-		#endregion
 
-
-		#region Opponent cards play effects
+		// Opponent cards play effects
 		if (!player_owned) {
 			if (playcardEffect == Effect.physical_attack) {
 				AttackPlayer(playcardValue);
@@ -148,51 +151,6 @@ public class Card {
 				}
 			}
 		}
-
-		/* This section is a legacy from when each card was specified in what it does on "Play()", without playcardEffect check.
-
-		// Standard attack cards //
-
-
-		// animals
-		case PlayCard.animal_wolf:
-			AttackPlayer(playcardValue);
-			break;
-		case PlayCard.animal_wolf_pack:
-			AttackPlayer(playcardValue);
-			break;
-		
-		// demons
-		case PlayCard.demon_fire:
-			AttackPlayer(playcardValue);
-			break;
-
-		// goblins
-		case PlayCard.goblin_scout:
-			AttackPlayer(playcardValue);
-			break;
-		case PlayCard.goblin_archer:
-			AttackPlayer(playcardValue);
-			break;
-		case PlayCard.goblin_raider:
-			AttackPlayer(playcardValue);
-			break;
-
-
-		// Events //
-
-		case PlayCard.animal_crows:
-			AttackPlayer(playcardValue);
-			break;
-
-		case PlayCard.goblin_assassin:
-			AttackPlayer(playcardValue);
-			break;
-		*/
-
-		#endregion
-
-
 	}
 
 	public void OnDiscard() {
@@ -206,13 +164,14 @@ public class Card {
 	}
 
 	public void OnDeath() {
-
 		switch (playCard) {
 
 		default:
 			break;
 		}
 	}
+
+	#endregion
 
 	public Card (PlayCard _cardClass) {
 		
@@ -431,6 +390,39 @@ public class Card {
 		
 		#endregion
 
+		}
+	}
+}
+
+public class BonusCard {
+
+	#region BonusCard types
+	public enum Type { none, government, hunter, wall }
+	public Type _type = BonusCard.Type.none;
+	#endregion
+
+	#region Stats
+	public string bonuscardName;
+	public string bonuscardArt = "";
+	public string bonuscardClass = "";
+
+
+	#endregion
+	public BonusCard (Type _type) {
+
+		switch (_type) {
+
+		case Type.government:
+			break;
+
+		case Type.hunter:
+			break;
+
+		case Type.wall:
+			break;
+
+		default:
+			break;
 		}
 	}
 }

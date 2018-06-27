@@ -16,6 +16,11 @@ public class GUI : MonoBehaviour {
 	public Canvas CardDisplayCanvas;
 	public CardDisplay CardDisplay;
 
+	public Canvas BonusCanvas;
+	public CardDisplay BonusCard1;
+	public CardDisplay BonusCard2;
+	public CardDisplay BonusCard3;
+
 	public Canvas TextDisplayCanvas;
 	public Text TextDisplay;
 	public float textDisplayTime = 2f;
@@ -78,16 +83,11 @@ public class GUI : MonoBehaviour {
 		EnergyAmount.GetComponent<Text> ().text = Main.instance.energy + "/" + Main.instance.maxenergy;
 	}
 
-	#endregion
-
-	#region spawn icon
-
-	public void SpawnIcon (GameObject _icon, GameObject _parent) {
-		GameObject newIcon = Instantiate (_icon);
-		newIcon.transform.SetParent (_parent.transform);		
+	public void DisableBonusUI () {
+		GUI.instance.BonusCanvas.gameObject.SetActive (false);
 	}
 
-	#endregion spawn icon
+	#endregion
 
 	#region TownGraphics
 	public void RedrawTown ()
@@ -205,6 +205,7 @@ public class GUI : MonoBehaviour {
 
 	#endregion
 
+	#region Unity lifecycle
 	// Use this for initialization
 	public void Awake () {
 
@@ -245,4 +246,6 @@ public class GUI : MonoBehaviour {
 			}
 		}
 	}
+
+	#endregion
 }
