@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 681, y: 471}
-  m_MaxSize: {x: 12006, y: 14021}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 12008, y: 14042}
   vertical: 1
-  controlID: 9959
+  controlID: 85
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,10 +121,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 542
-  m_MinSize: {x: 681, y: 221}
-  m_MaxSize: {x: 12006, y: 4021}
+  m_MinSize: {x: 683, y: 221}
+  m_MaxSize: {x: 12008, y: 4021}
   vertical: 0
-  controlID: 9939
+  controlID: 71
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,8 +143,8 @@ MonoBehaviour:
     y: 0
     width: 300
     height: 542
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -180,7 +180,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: a2f0fdff2ef1fdffe4f1fdfffe08feff8a09feff400afeff2a23feffb623feff6c24feff023afeff7e3afeff343bfefff257feff1a6afefffe6efefff4a2feffa025ffffcac7ffff6af5ffff00000000162b0000862b0000922b00000e5f00004a5f0000ce6d0000d66e0000186f0000546f00003e78000096790000c8790000
+    m_ExpandedIDs: 9af4ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -290,9 +290,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 471.60687
+    m_Target: 829.03064
     speed: 2
-    m_Value: 471.60687
+    m_Value: 829.03064
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -411,8 +411,8 @@ MonoBehaviour:
     y: 542
     width: 1920
     height: 405
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 230, y: 271}
+  m_MaxSize: {x: 10000, y: 10021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -455,19 +455,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Resources/prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/prefabs
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\dchuraev\Documents\GitHub\BoardGame
+  m_LastProjectPath: D:\Work\Github\Boardgame-unity
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e4280000
-    m_LastClickedID: 10468
-    m_ExpandedIDs: 0000000068280000c8280000e4280000782900008a2900009a290000b6290000bc29000000ca9a3bffffff7f
+    m_SelectedIDs: c0280000
+    m_LastClickedID: 10432
+    m_ExpandedIDs: 00000000c02800003429000050290000ee290000042a0000182a00003c2a0000462a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -495,7 +495,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1a250000
     m_LastClickedID: 9498
-    m_ExpandedIDs: 0000000068280000c8280000e4280000782900008a2900009a290000b6290000bc29000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000c02800003429000050290000ee290000042a0000182a00003c2a0000462a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
